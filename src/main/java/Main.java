@@ -12,8 +12,11 @@ public class Main {
 
         System.out.println("Extraer saldo");
         cantidad = sc.nextInt();
-        pers.extraerSaldo(cantidad);
-        System.out.println("Su saldo es $ " + pers.getSaldo());
+        pers.extraerSaldo1(cantidad);
+
+
+
+
 
 
 

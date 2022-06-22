@@ -15,7 +15,10 @@ public class Cuenta {
     public int extraerSaldo (int cantidad) {
         return this.saldo = this.saldo - cantidad;
 
-    }
+
+        }
+
+
     public String mensaje(){
         return "Sin saldo disponible";
     }

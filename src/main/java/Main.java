@@ -7,9 +7,11 @@ public class Main {
         Cuenta pers = new Cuenta();
         System.out.println("Ingresar saldo");
         Scanner sc = new Scanner (System.in);
+        int cantidad = sc.nextInt();
+        pers.insertarSaldo(cantidad);
 
         System.out.println("Extraer saldo");
-        int cantidad = sc.nextInt();
+        cantidad = sc.nextInt();
         pers.extraerSaldo(cantidad);
         System.out.println("Su saldo es $ " + pers.getSaldo());
 

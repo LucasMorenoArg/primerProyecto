@@ -1,24 +1,23 @@
-import java.math.BigDecimal;
 
 public class Cuenta {
 
     private String persona;
-    private BigDecimal saldo;
+    public int saldo;
 
+    public int getSaldo() {
+        return this.saldo;
+     }
 
-    public String getPersona() {
-        return persona;
+    public int insertarSaldo (int cantidad) {
+        return this.saldo = this.saldo + cantidad;
     }
 
-    public void setPersona(String persona) {
-        this.persona = persona;
-    }
+    public int extraerSaldo (int cantidad) {
+        return this.saldo = this.saldo - cantidad;
 
-    public BigDecimal getSaldo() {
-        return saldo;
     }
-
-    public void setSaldo(BigDecimal saldo) {
-        this.saldo = saldo;
+    public String mensaje(){
+        return "Sin saldo disponible";
     }
 }
+

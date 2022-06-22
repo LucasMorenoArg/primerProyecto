@@ -1,17 +1,22 @@
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 
-
-class CuentaTest {
+public class CuentaTest {
+    @Test
+    public void testExtraerSaldo() {
+        Cuenta cuenta = new Cuenta();
+        cuenta.extraerSaldo(9000);
+        int real = -9000;
+        int esperado = cuenta.getSaldo();
+        Assertions.assertEquals(esperado, real);
+        System.out.println( real +" "+ esperado);
+    }
 
     @Test
-    void testNombreCuenta() {
-        Cuenta cuenta = new Cuenta();
-        cuenta.setPersona("Andrés");
-        String esperado ="andrés";
-        String real = cuenta.getPersona();
-        System.out.println(esperado.equals(real));
-
+    public void testInsertarSaldoYExtraerSaldo() {
     }
+
 
 }

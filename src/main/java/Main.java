@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Ingresar saldo");
         Scanner sc = new Scanner (System.in);
         int cantidad = sc.nextInt();
-        pers.insertarSaldo(cantidad);
+        pers.ingresarSaldo(cantidad);
 
         System.out.println("Extraer saldo");
         cantidad = sc.nextInt();

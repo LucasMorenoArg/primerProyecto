@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CuentaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-23T16:24:35" hostname="AR0C02VV0P1HV2J" time="0.003">
+  <properties/>
+  <testcase name="testIngresarSaldo" classname="CuentaTest" time="0.003"/>
+  <system-out><![CDATA[1000 1000
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

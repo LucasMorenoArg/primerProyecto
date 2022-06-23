@@ -1,6 +1,8 @@
 
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class CuentaTest {
@@ -10,12 +12,19 @@ public class CuentaTest {
         cuenta.extraerSaldo1(9000);
         int real = 0;
         int esperado = cuenta.getSaldo();
-        Assertions.assertEquals(esperado, real);
+        assertEquals(esperado, real);
         System.out.println( real +" "+ esperado);
     }
 
     @Test
-    public void testInsertarSaldoYExtraerSaldo() {
+    public void testIngresarSaldo() {
+        Cuenta cuenta = new Cuenta();
+        cuenta.ingresarSaldo(1000);
+        int real =1000;
+        int esperado = cuenta.getSaldo();
+        assertEquals(esperado,real);
+        System.out.println( real +" "+esperado);
+
     }
 
 

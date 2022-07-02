@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CuentaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-23T16:24:35" hostname="AR0C02VV0P1HV2J" time="0.003">
+<testsuite name="CuentaTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-24T23:38:45" hostname="AR0C02VV0P1HV2J" time="0.016">
   <properties/>
-  <testcase name="testIngresarSaldo" classname="CuentaTest" time="0.003"/>
-  <system-out><![CDATA[1000 1000
+  <testcase name="testExtraerSaldo" classname="CuentaTest" time="0.008"/>
+  <testcase name="testIngresarSaldo" classname="CuentaTest" time="0.007"/>
+  <system-out><![CDATA[Saldo insuficiente
+0 0
+1000 1000
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
